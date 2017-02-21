@@ -6,9 +6,9 @@ import {Task} from "./task";
   selector: 'my-create',
   template: `<br> <br>
   <form (ngSubmit)="submit(date.value,title.value,description.value,priority.value)">
-  <input type="date" class="form-control" placeholder="dd/mm/yyyy" value="{{data.date}}" #date><br>
-  <input type="text" class="form-control" placeholder="Title" #title value="{{data.title}}"><br>
-  <input type="text" class="form-control" placeholder="Description" #description value="{{data.description}}"><br>
+  <input type="date" required class="form-control" placeholder="dd/mm/yyyy" value="{{data.date}}" #date><br>
+  <input type="text" required class="form-control" placeholder="Title" #title value="{{data.title}}"><br>
+  <input type="text" required class="form-control" placeholder="Description" #description value="{{data.description}}"><br>
       <label>Priority: </label><select #priority   >
   <option value="high">High</option>
   <option value="medium">Medium</option>
